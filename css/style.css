@@ -7,10 +7,10 @@ a {
   cursor: pointer;
   color: #42454a;
 }
-h2{
-  font-size: 3em
+h2 {
+  font-size: 3em;
 }
-h3{
+h3 {
   font-size: 1.5em;
 }
 .site {
@@ -20,6 +20,9 @@ h3{
 }
 .span {
   -webkit-text-stroke: 3px #42454a;
+}
+.container{
+  display: none;
 }
 /*----------------*/
 /*------TOPO------*/
@@ -111,13 +114,13 @@ h3{
 
 /*----------------*/
 /*---EFICIENCIA---*/
-.eficiencia{
-display: flex;
-margin-top: 20em;
-flex-direction: column;
-text-align: center;
+.eficiencia {
+  display: flex;
+  margin-top: 20em;
+  flex-direction: column;
+  text-align: center;
 }
-.eficiencia img{
+.eficiencia img {
   margin-top: 5em;
   width: 1300px;
 }
@@ -126,35 +129,35 @@ text-align: center;
 
 /*----------------*/
 /*---ACESSORIOS---*/
-.acessorios{
+.acessorios {
   display: flex;
   text-align: center;
   flex-direction: column;
   margin-top: 10em;
 }
-.acessorios div{
+.acessorios div {
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: space-between;
   margin-top: 5em;
 }
-.acessorios div div{
+.acessorios div div {
   flex-direction: column;
 }
-.acessorios div div ul li{
+.acessorios div div ul li {
   display: flex;
   align-items: center;
   margin: 20px;
 }
-.acessorios a{
+.acessorios a {
   margin-top: 2em;
   font-size: 1.5em;
   border: 1px solid #adb1b7;
   border-radius: 10px;
   padding: 10px;
 }
-.acessorios a:hover{
+.acessorios a:hover {
   background-color: #adb1b7;
 }
 /*---ACESSORIOS---*/
@@ -162,19 +165,153 @@ text-align: center;
 
 /*----------------*/
 /*------CORES-----*/
-.cores{
+.cores {
   display: flex;
   justify-content: center;
   text-align: center;
   flex-direction: column;
   margin-top: 10em;
 }
-.cores div{
+.cores div {
   margin-top: 4em;
   display: flex;
   justify-content: center;
   justify-content: space-around;
- }
+}
 
 /*------CORES-----*/
 /*----------------*/
+
+/*----------------*/
+/*---DEPOIMENTO---*/
+.depoimento {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+.depo-cont {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-top: 5em;
+}
+.depo-cont div {
+  border: #666666 solid 1px;
+  padding: 15px;
+  margin: 10px;
+}
+.depo-cont div div{
+  border: none;
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.depo-cont div p{
+  margin: 10px;
+}
+.depo-cont div div :nth-child(1){
+  font-weight: 600;
+  margin-right: 10px;
+}
+
+/*---DEPOIMENTO---*/
+/*----------------*/
+
+/*----------------*/
+/*----Contato----*/
+.contato{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  margin-top: 10em;
+}
+.contato form{
+  margin-top: 5em;
+}
+.contato form input{
+  border: 1px solid #949494;
+  font-size: 1em;
+  border-radius: 10px;
+  width: 22%;
+  padding: 20px;
+}
+.contato form button{
+  background-color: #42454a;
+  color: aliceblue;
+  border: #303133;
+  font-size: 1em;
+  border-radius: 10px;
+  width: 10%;
+  padding: 20px;
+}
+
+/*-----Contato----*/
+/*----------------*/
+
+/*----------------*/
+/*-----RODAPE-----*/
+.rodape{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  justify-content: space-between;
+  margin-top: 10em;
+  background-color: #303133;
+  width: 100%;
+  height: 50vh;
+}
+.rodape div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px;
+  color: white !important;
+}
+.rodape div div h3{
+  font-size: 2em;
+  margin: 10px;
+  font-weight: 700
+}
+.rodape div div{
+  flex-direction: column;
+}
+.rodape div div ul li{
+  margin: 10px;
+}
+.rodape a{
+  color: white;
+}
+.rodape a:hover{
+  color: rgb(0, 140, 255);
+}
+.redesocial ul{
+  display: flex;
+  cursor: pointer;
+  gap: 10px;
+}
+.final{
+  display: flex;
+  justify-content: center;
+  background-color: #303133;
+  padding: 10px;
+  color: white;
+
+}
+/*-----RODAPE-----*/
+/*----------------*/
+
+/*--------------------*/
+/*-----RESPONSIVO-----*/
+/*--------------------*/
+@media(max-width: 800px){
+  /*--------------MENU_MOBILE-------------*/
+ 
+  /*--------------MENU_MOBILE-------------*/
+  .topo ul{
+    display: none;
+  }
+}
